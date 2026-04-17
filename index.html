@@ -3,53 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <title>Computer Science Learning Hub</title>
-  
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Glass Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Glass Button */
+.card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+/* Links */
+.card a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Computer Science Learning Hub</h1>
-<p>KS3 | IGCSE | A Level</p>
+    <h1>Computer Science Learning Hub</h1>
+    <h3>Prepared by Ravi Raju</h3>
 </header>
 
+<div class="container">
 
-<nav>
-<ul>
-<li><a href="#">KS3</a></li>
+    <!-- Lessons -->
+    <div class="card"><a href="lesson01.html">Lesson 1<br>Introduction</a></div>
+    <div class="card"><a href="lesson02.html">Lesson 2<br>Problem Analysis</a></div>
+    <div class="card"><a href="lesson03.html">Lesson 3<br>Decomposition</a></div>
+    <div class="card"><a href="lesson04.html">Lesson 4<br>Abstraction</a></div>
+    <div class="card"><a href="lesson05.html">Lesson 5<br>Algorithms</a></div>
+    <div class="card"><a href="lesson06.html">Lesson 6<br>Representation</a></div>
+    <div class="card"><a href="lesson07.html">Lesson 7<br>Pseudocode</a></div>
+    <div class="card"><a href="lesson08.html">Lesson 8<br>Arithmetic</a></div>
+    <div class="card"><a href="lesson09.html">Lesson 9<br>Logic</a></div>
+    <div class="card"><a href="lesson10.html">Lesson 10<br>Sequence</a></div>
+    <div class="card"><a href="lesson11.html">Lesson 11<br>Selection</a></div>
+    <div class="card"><a href="lesson12.html">Lesson 12<br>CASE</a></div>
+    <div class="card"><a href="lesson13.html">Lesson 13<br>Iteration</a></div>
+    <div class="card"><a href="lesson14.html">Lesson 14<br>Count Loops</a></div>
+    <div class="card"><a href="lesson15.html">Lesson 15<br>Condition Loops</a></div>
+    <div class="card"><a href="lesson16.html">Lesson 16<br>Nested Loops</a></div>
+    <div class="card"><a href="lesson17.html">Lesson 17<br>Variables</a></div>
+    <div class="card"><a href="lesson18.html">Lesson 18<br>Data Types</a></div>
+    <div class="card"><a href="lesson19.html">Lesson 19<br>Constants</a></div>
+    <div class="card"><a href="lesson20.html">Lesson 20<br>Arrays</a></div>
+    <div class="card"><a href="lesson21.html">Lesson 21<br>Array Processing</a></div>
+    <div class="card"><a href="lesson22.html">Lesson 22<br>Trace Tables</a></div>
+    <div class="card"><a href="lesson23.html">Lesson 23<br>Linear Search</a></div>
+    <div class="card"><a href="lesson24.html">Lesson 24<br>Counting</a></div>
+    <div class="card"><a href="lesson25.html">Lesson 25<br>Total Algorithms</a></div>
+    <div class="card"><a href="lesson26.html">Lesson 26<br>Max & Min</a></div>
+    <div class="card"><a href="lesson27.html">Lesson 27<br>Validation</a></div>
+    <div class="card"><a href="lesson28.html">Lesson 28<br>Verification</a></div>
+    <div class="card"><a href="lesson29.html">Lesson 29<br>Test Data</a></div>
+    <div class="card"><a href="lesson30.html">Lesson 30<br>Debugging</a></div>
 
-<li><a href="lesson01.html">IGCSE – Algorithm Design</a></li>
-
-<li><a href="#">A Level</a></li>
-
-<li><a href="#">Interactive Tools</a></li>
-
-<li><a href="#">Exam Practice</a></li>
-
-<li><a href="trace-simulator.html">Trace Table Simulator</a></li>
-</ul>
-</nav>
-
-
-<section class="welcome">
-
-<h2>Welcome</h2>
-
-<p>
-This portal contains lessons, simulations and exercises for Computer Science students.
-</p>
-
-<p>
-Select a course from the menu above to begin learning.
-</p>
-
-</section>
+</div>
 
 <footer>
-<p>Computer Science Learning Portal</p>
+    <p>IGCSE Computer Science – Algorithm Design</p>
 </footer>
 
 </body>
-
 </html>
